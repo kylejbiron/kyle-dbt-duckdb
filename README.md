@@ -58,3 +58,21 @@ This project is designed to work with downloaded datasets from [CMS Sample 1 (20
     brew install duckdb
     ```
 
+7. **Install Pre-Commit"**
+
+    ```
+    pip3 install pre-commit
+    ```
+
+8. **Install SQL Linter (sqlfluff)**
+
+    ```
+    pip3 install sqlfluff
+    ```
+
+    and
+
+    ```
+    pip3 install sqlfluff-templater-dbt
+    ```
+
