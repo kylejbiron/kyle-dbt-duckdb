@@ -76,3 +76,30 @@ This project is designed to work with downloaded datasets from [CMS Sample 1 (20
     pip3 install sqlfluff-templater-dbt
     ```
 
+## Dev Workflow Commands
+
+* run dbt
+
+```
+dbt run
+```
+* start the DuckDB CLI
+```
+duckdb
+```
+* connect to an existing DuckDB database
+```
+.open db/cms_synpufs.db
+```
+* show tables in DuckDB CLI
+```
+show tables;
+```
+* run SQL queries in DuckDB CLI
+```
+SELECT * FROM cms_synpufs.stg_beneficiaries limit 5;
+```
+* quit DuckDB CLI
+```
+.quit
+```
