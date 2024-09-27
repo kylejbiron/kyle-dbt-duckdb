@@ -4,5 +4,23 @@ SELECT *
 
 FROM
     read_csv_auto(
-        '/Users/kyle/Documents/personal_projects/repos/kyle-dbt-duckdb/cms_synpufs/raw/DE1_0_2008_Beneficiary_Summary_File_Sample_1.csv'
+        '{{ var("raw_dir") }}/DE1_0_2008_Beneficiary_Summary_File_Sample_1.csv'
+    )
+
+UNION ALL
+
+SELECT *
+
+FROM
+    read_csv_auto(
+        '{{ var("raw_dir") }}/DE1_0_2009_Beneficiary_Summary_File_Sample_1.csv'
+    )
+
+UNION ALL
+
+SELECT *
+
+FROM
+    read_csv_auto(
+        '{{ var("raw_dir") }}/DE1_0_2010_Beneficiary_Summary_File_Sample_1.csv'
     )
