@@ -103,3 +103,7 @@ SELECT * FROM cms_synpufs.stg_beneficiaries limit 5;
 ```
 .quit
 ```
+* update packages with dbt project
+```
+dbt deps
+```
