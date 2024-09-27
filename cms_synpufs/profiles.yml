@@ -1,0 +1,7 @@
+cms_synpufs:
+  outputs:
+    dev:
+      type: duckdb
+      path: /Users/kyle/Documents/personal_projects/repos/kyle-dbt-duckdb/cms_synpufs/db/cms_synpufs.db
+      extensions: []
+  target: dev
